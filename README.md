@@ -11,12 +11,12 @@ Practice all aspects of Rails development.
 ## Baseline
 In this baseline, you'll create a new Rails application and get started with two of the major components: route, controller and view.
 
-- Fork and clone this repository to your computer
-- Create a new Rails application using `rails new .`
-  - create a `Tasks` controller
-  - create a route to view the task `index` page
-  - create a controller action for the task `index` page which contains an array of hard-coded tasks
-  - create an ERB view to display the tasks from the controller action
+**-** Fork and clone this repository to your computer
+**-** Create a new Rails application using `rails new .`
+  **-** create a `Tasks` controller
+  **-** create a route to view the task `index` page
+  **-** create a controller action for the task `index` page which contains an array of hard-coded tasks
+  **-** create an ERB view to display the tasks from the controller action
 
 <!--
 ## Wave 1
