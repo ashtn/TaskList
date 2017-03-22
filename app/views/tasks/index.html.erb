@@ -4,7 +4,7 @@
 <ul>
   <% @tasks.each do |task| %>
 
-    <li><%= task.name %>: <%= task.description %> </li>
+    <li><%= task.id %>. <%= task.name %>: <%= task.description %> </li>
 
   <% end %>
 </ul>
