@@ -35,14 +35,14 @@ This wave is where we introduce ActiveRecord to create a model. We use the model
 In this wave, we will expand the actions we support and introduce forms for user interactivity and persistence.
 
 1. add support to `show` each task
-    - update the task list to link to a `show` action for each individual task
-    - create a route
-    - create a controller action
-    - create an ERB view
+    **-** update the task list to link to a `show` action for each individual task
+    **-** create a route
+    **-** create a controller action
+    **-** create an ERB view
 1. Create a new task:
-    - update the task list to have a link to add a new task
-      - this will give the user a new page with a **form** with the appropriate task fields
-      - the site should take the user back to the task list after the new task is added
+    **-** update the task list to have a link to add a new task
+      **-** this will give the user a new page with a **form** with the appropriate task fields
+      **-** the site should take the user back to the task list after the new task is added
 
 
 <!--

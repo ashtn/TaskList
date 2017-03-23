@@ -1536,3 +1536,606 @@ Processing by TasksController#show as HTML
 Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/tasks/new" for ::1 at 2017-03-22 15:28:49 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Task</h1>
+    2: 
+    3: <%= form_for @task do |f| %>
+    4: 
+    5:   <%= f.label :name %>
+    6:   <%= f.text_field :name %>
+  
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__4445449862150188782_70281272187440'
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.5ms)
+Started GET "/tasks/new" for ::1 at 2017-03-22 15:28:49 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Task</h1>
+    2: 
+    3: <%= form_for @task do |f| %>
+    4: 
+    5:   <%= f.label :name %>
+    6:   <%= f.text_field :name %>
+  
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__4445449862150188782_70281257295940'
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.2ms)
+Started GET "/tasks/new" for ::1 at 2017-03-22 15:29:21 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 62ms (Views: 47.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 15:40:25 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 15:40:28 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 30ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 15:41:26 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2017-03-22 15:41:32 -0700
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v4IUbFEGkDOYC9L6S+eEvYoCQQcinWvs1JA4fWh5r3RjpOuv1p8qtwQ7CsFf12oCSwzejj1Zti+9KxGYJZ2z+g==", "task"=>{"name"=>"create schema", "description"=>"create the database schema and tables by running the `rails db:migrate` command"}, "commit"=>"Create Task"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2017-03-22 22:41:32 UTC], ["updated_at", 2017-03-22 22:41:32 UTC]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 8ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 15:41:32 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks" for ::1 at 2017-03-22 15:44:51 -0700
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lrbb9j7dradRsrasUOE8I7s8Qu0fwHtQRa8GcUCI+1KNnD9cbAf3kj6v8aDuhX8AaCWbo0fJ3Erp778KNzq8FQ==", "task"=>{"name"=>"create schema", "description"=>"create the database schema and tables by running the `rails db:migrate` command"}, "commit"=>"Create Task"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "create schema"], ["description", "create the database schema and tables by running the `rails db:migrate` command"], ["created_at", 2017-03-22 22:44:51 UTC], ["updated_at", 2017-03-22 22:44:51 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 16ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 15:44:51 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 15:45:49 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 15:48:46 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 30ms (Views: 23.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tasks/1" for ::1 at 2017-03-22 15:48:47 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Task:0x007fd7458605c8>):
+    1: <h1>Show Task</h1>
+    2: 
+    3: <p>
+    4:   <%= @task.title %> 
+    5: </p>
+    6: <p>
+    7:   <%= @task.id %>. <%= @task.name %>: <%= @task.description %>
+  
+app/views/tasks/show.html.erb:4:in `_app_views_tasks_show_html_erb___729840052086291148_70281280539480'
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.9ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.8ms)
+Started GET "/tasks" for ::1 at 2017-03-22 16:00:20 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 49ms (Views: 45.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:00:24 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:00:24 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:02:28 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (101.9ms)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `select_tag' for #<ActionView::Helpers::FormBuilder:0x007fd742e18cc0>
+Did you mean?  select):
+    4: 
+    5: 
+    6: 
+    7:   <%= f.select_tag(:title, options_for_select([['Baseline', 1], ['Wave 1', 2], [ 'Wave 2', 3], ['Wave 3', 4]])) %>
+    8: 
+    9:   <%= f.label :name %>
+   10:   <%= f.text_field :name %>
+  
+app/views/tasks/new.html.erb:7:in `block in _app_views_tasks_new_html_erb__4445449862150188782_70281258491740'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__4445449862150188782_70281258491740'
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.3ms)
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:02:44 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:04:20 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:04:59 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2017-03-22 16:05:18 -0700
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vNSQZjsIaulV6yRk9VcolI9T0wz8dKfXtA8cAg58WgJg8m+lvJHQbcnb/F/hZ8YrTl1MheOwehTdtDXnQ5hGjA==", "title"=>"1", "task"=>{"name"=>"Task Model", "description"=>"the `Task` model should include _at least_ a name, a description and a completion date"}, "commit"=>"Create Task"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Task Model"], ["description", "the `Task` model should include _at least_ a name, a description and a completion date"], ["created_at", 2017-03-22 23:05:18 UTC], ["updated_at", 2017-03-22 23:05:18 UTC]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 14ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:05:18 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/9" for ::1 at 2017-03-22 16:05:27 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Task:0x007fd745931b00>):
+    1: <h1>Show Task</h1>
+    2: 
+    3: <p>
+    4:   <%= @task.title %> 
+    5: </p>
+    6: <p>
+    7:   <%= @task.id %>. <%= @task.name %>: <%= @task.description %>
+  
+app/views/tasks/show.html.erb:4:in `_app_views_tasks_show_html_erb___729840052086291148_70281280967580'
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.5ms)
+Started GET "/tasks" for ::1 at 2017-03-22 16:07:24 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:07:44 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/9" for ::1 at 2017-03-22 16:08:05 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Task:0x007fd7459b9280>):
+    1: <h1>Show Task</h1>
+    2: 
+    3: <p>
+    4:   <%= @task.title %> 
+    5: </p>
+    6: <p>
+    7:   <%= @task.id %>. <%= @task.name %>: <%= @task.description %>
+  
+app/views/tasks/show.html.erb:4:in `_app_views_tasks_show_html_erb___729840052086291148_70281281248780'
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddTitleColumn (20170322232259)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "tasks" ADD "title" integer[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170322232259"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/tasks/9" for ::1 at 2017-03-22 16:27:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 25.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:28:16 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 42ms (Views: 35.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:28:42 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 55ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2017-03-22 16:28:53 -0700
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fysjRwViac7fwdB4iFjPUQEUlE6PT/fVzKtSKlyCjSCjDdyEgvvTSkPxCEOcaCHuwBoLx5CLKhalEHvPEWaRrg==", "title"=>"2", "task"=>{"name"=>"new model", "description"=>"create at least 2 `Task` model instances using the `rails console`"}, "commit"=>"Create Task"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "new model"], ["description", "create at least 2 `Task` model instances using the `rails console`"], ["created_at", 2017-03-22 23:28:53 UTC], ["updated_at", 2017-03-22 23:28:53 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:28:53 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/10" for ::1 at 2017-03-22 16:28:57 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 20.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Started GET "/tasks/10" for ::1 at 2017-03-22 16:31:23 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:31:39 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:31:39 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:31:41 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (102.6ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `select_tag' for #<ActionView::Helpers::FormBuilder:0x007fd741b47d80>
+Did you mean?  select):
+    4: 
+    5: 
+    6: 
+    7:   <%= f.select_tag(:title, options_for_select([['Baseline', 1], ['Wave 1', 2], [ 'Wave 2', 3], ['Wave 3', 4]])) %>
+    8: 
+    9:   <%= f.label :name %>
+   10:   <%= f.text_field :name %>
+  
+app/views/tasks/new.html.erb:7:in `block in _app_views_tasks_new_html_erb__4445449862150188782_70281273148700'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__4445449862150188782_70281273148700'
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.2ms)
+Started GET "/tasks" for ::1 at 2017-03-22 16:33:21 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:33:23 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2017-03-22 16:33:32 -0700
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VkpZzIFh7I+TfWwFwEiUhuEdw94/AL00CztEopVnGWmKbKYPBvhWCw9NtD7UeHo5IBNcVyDEYPdigG1H2IMF5w==", "task"=>{"title"=>"3", "name"=>"Update task", "description"=>"update the task list to link to a `show` action for each individual task"}, "commit"=>"Create Task"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError ('3' is not a valid title):
+  
+app/controllers/tasks_controller.rb:16:in `create'
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.8ms)
+Started POST "/tasks" for ::1 at 2017-03-22 16:35:10 -0700
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TpIqlzZvPZ13eFtLWkUz6p6WfpifvFiHR5eOFSf0IkftuM49ZLVnqBhlHEfkIXDJTY+n1se1/53r1zduUEZlAA==", "task"=>{"title"=>"3", "name"=>"Update task", "description"=>"update the task list to link to a `show` action for each individual task"}, "commit"=>"Create Task"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError ('3' is not a valid title):
+  
+app/controllers/tasks_controller.rb:16:in `create'
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/ashtn/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.8ms)
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:35:21 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2017-03-22 16:35:27 -0700
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cuDkN1yKpEiXYL24Ze+QURlU/SRH/iblyBeUoKTCJ5/RygCdDlD+ffh9+rTbi9Nyyk0kah/3gf9kVy3b03Bg2A==", "task"=>{"title"=>"wave2", "name"=>"Update task", "description"=>"update the task list to link to a `show` action for each individual task"}, "commit"=>"Create Task"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Update task"], ["description", "update the task list to link to a `show` action for each individual task"], ["created_at", 2017-03-22 23:35:27 UTC], ["updated_at", 2017-03-22 23:35:27 UTC], ["title", 2]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 7ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:35:27 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks/11" for ::1 at 2017-03-22 16:35:44 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/11" for ::1 at 2017-03-22 16:41:10 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:41:14 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:41:15 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:41:46 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/11" for ::1 at 2017-03-22 16:42:00 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:42:20 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/11" for ::1 at 2017-03-22 16:42:40 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:52:13 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2017-03-22 16:52:13 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for ::1 at 2017-03-22 16:52:15 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
