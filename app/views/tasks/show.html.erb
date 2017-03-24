@@ -1,10 +1,13 @@
 <h1>Show Task</h1>
 
 <p>
-  <%= @task.title %> 
+  <%= @task.title %>
 </p>
 <p>
   <%= @task.id %>. <%= @task.name %>: <%= @task.description %>
 </p>
 
 <img src="http://placebeyonce.com/300-300" alt="beyonce">
+
+
+<%= link_to "edit task", edit_task_path(@task) %>
