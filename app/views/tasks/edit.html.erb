@@ -1,1 +1,15 @@
 <h1>Edit Task</h1>
+
+<%= form_for @task, method: :put do |f| %>
+
+  <%= f.select(:title, options_for_select([['Baseline', :baseline], ['Wave 1', :wave1], [ 'Wave 2', :wave2], ['Wave 3', :wave3]])) %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description, size: "60x12" %>
+
+  <%= f.submit "Edit Task"%>
+
+<% end %>
