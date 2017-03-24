@@ -1,4 +1,19 @@
 class TasksController < ApplicationController
+
+  #create
+  def create
+
+    task = Task.create task_params
+    unless task.id == nil
+      redirect_to tasks_path
+    end
+  end
+
+  def new
+    @task = Task.new
+  end
+
+  #read
   def index
     @tasks = Task.all
   end
@@ -7,6 +22,7 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
   end
 
+  #update
   def edit
     @task = Task.find(params[:id])
   end
@@ -19,27 +35,19 @@ class TasksController < ApplicationController
     task.description = task_params[:description]
 
     if task.save
-      redirect_to task_path(task.id)
+      redirect_to tasks_path(task.id)
     end
   end
 
-  def new
-    @task = Task.new
+  def destroy
+    Task.destroy(params[:id])
+    redirect_to tasks_path
   end
 
-  def create
-
-    task = Task.create task_params
-    unless task.id == nil
-      redirect_to tasks_path
-    end
-
-  end
 
   private
 
   def task_params
     params.require(:task).permit(:name, :description, :title)
-
   end
 end
