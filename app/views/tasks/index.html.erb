@@ -1,8 +1,16 @@
-<h1>Tasks#index</h1>
+<h1 class: "page_title">Tasks#index</h1>
 
 <h2>Task List</h2>
-<ul>
+<ul class: "tasks">
+  <% title = String.new %>
+
   <% @tasks.each do |task| %>
+
+      <% if title != task.title %>
+      <% title = task.title %>
+      <%= title %>
+      <% end %>
+
 
     <li><%= task.id %>. <%= link_to task.name, task_path(task.id) %>: <%= link_to task.description, task_path(task.id) %> </li>
 
