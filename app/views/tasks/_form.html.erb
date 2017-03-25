@@ -1,6 +1,6 @@
 <%= form_for @task, method: form_method do |f| %>
 
-  <%= f.select(:title, options_for_select([['Baseline', :baseline], ['Wave 1', :wave1], [ 'Wave 2', :wave2], ['Wave 3', :wave3]])) %>
+  <%= f.select(:title, options_for_select([['Baseline', :baseline], ['Wave 1', :wave1], [ 'Wave 2', :wave2], ['Wave 3', :wave3], ['Wave 4', :wave4]])) %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>

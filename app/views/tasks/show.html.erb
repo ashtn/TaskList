@@ -3,11 +3,13 @@
 <p>
   <%= @task.title %>
 </p>
+<img src="http://placebeyonce.com/300-300" alt="beyonce">
 <p>
   <%= @task.id %>. <%= @task.name %>: <%= @task.description %>
 </p>
-
-<img src="http://placebeyonce.com/300-300" alt="beyonce">
+  <% if @task.completion_date != nil %>
+    Task was completed on: <%= @task.completion_date %>
+  <% end %>
 
 
 <%= link_to "edit task", edit_task_path(@task) %>
