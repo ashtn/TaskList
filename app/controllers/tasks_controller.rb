@@ -30,15 +30,12 @@ class TasksController < ApplicationController
   def update
     task = Task.find(params[:id])
 
-    task.title = task_params[:title]
-    task.name = task_params[:name]
-    task.description = task_params[:description]
-
-    if task.save
+    if task.update task_params
       redirect_to tasks_path(task.id)
     end
   end
 
+  #destroy
   def destroy
     Task.destroy(params[:id])
     redirect_to tasks_path
@@ -48,6 +45,6 @@ class TasksController < ApplicationController
   private
 
   def task_params
-    params.require(:task).permit(:name, :description, :title)
+    params.require(:task).permit(:name, :description, :title, :completion_date, :complete)
   end
 end
