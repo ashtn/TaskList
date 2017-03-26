@@ -1,15 +1,16 @@
 <h1 class: "page_title">Show Task</h1>
 
-<p>
+<p class: = "task_title">
   <%= @task.title %>
-</p>
-<img src="http://placebeyonce.com/300-300" alt="beyonce">
+</p >
+
+<img src="http://placebeyonce.com/300-300" alt="beyonce" class: = "task_image">
+
 <p>
   <%= @task.id %>. <%= @task.name %>: <%= @task.description %>
 </p>
-  <% if @task.completion_date != nil %>
-    Task was completed on: <%= @task.completion_date %>
-  <% end %>
+
+<%= render partial: "completed_on" %>
 
 
 <%= link_to "edit task", edit_task_path(@task) %>

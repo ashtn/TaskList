@@ -8,19 +8,19 @@
 
     <% if title != task.title %>
       <% title = task.title %>
-      <%= title %>
+      <%= title.upcase %>
     <% end %>
 
 
-    <li><%= link_to task.name, task_path(task.id) %>:
+    <li>
 
       <% if task.complete %>
-        <del><%= task.description %></del>
+        <del><%= link_to task.name, task_path(task.id) %></del>
         <%= link_to "uncomplete", task_path(task.id,
         task: { complete: false, completion_date: nil}),
         method: :patch %>
       <% else  %>
-        <%= task.description %>
+        <%= link_to task.name, task_path(task.id) %>
         <%= link_to "complete", task_path(task.id,
         task: {complete: true, completion_date: Time.now}), method: :patch %>
       <% end %>
