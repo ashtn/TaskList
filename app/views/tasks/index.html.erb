@@ -16,14 +16,18 @@
 
       <% if task.complete %>
         <del><%= link_to task.name, task_path(task.id) %></del>
-        <%= link_to "uncomplete", task_path(task.id,
+        <%= link_to "☑️", update_task_path(task[:id],
         task: { complete: false, completion_date: nil}),
-        method: :patch %>
+        method: :put %>
       <% else  %>
         <%= link_to task.name, task_path(task.id) %>
-        <%= link_to "complete", task_path(task.id,
-        task: {complete: true, completion_date: Time.now}), method: :patch %>
+        <%= link_to "🔘", update_task_path(task[:id],
+        task: {complete: true, completion_date: Time.now}), method: :put %>
       <% end %>
+
+      <%= link_to "␡", delete_task_path(task.id),
+      data: { confirm: "Are you sure you want to delete this task?"},
+      method: :delete%>
     </li>
   <% end %>
 </ol>

@@ -8,8 +8,8 @@ Rails.application.routes.draw do
 
   #update
   get "tasks/:id/edit", to: "tasks#edit", as: "edit_task"
-  put "tasks/:id", to: "tasks#update"
-  patch "tasks/:id", to: "tasks#update"
+  put "tasks/:id", to: "tasks#update", as: "update_task"
+  patch "tasks/:id", to: "tasks#complete", as: "complete_task"
 
   #read
   get '/tasks', to: 'tasks#index'

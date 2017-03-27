@@ -1,7 +1,7 @@
 <% def completed_on %>
   <% @task = Task.find(params[:id]) %>
   <% if @task.completion_date? %>
-    <% return "TEST On: " %>
+    <% return "Completed On: " %>
   <%# else %>
     <%# return "you got this!" %>
   <% end %>

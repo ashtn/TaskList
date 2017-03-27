@@ -6,9 +6,34 @@
 
 <img src="http://placebeyonce.com/300-300" alt="beyonce" class: = "task_image">
 
-<p>
-  <%= @task.id %>. <%= @task.name %>: <%= @task.description %>
+
+
+
+
+
+<% if @task.complete %>
+  <p>
+    <%= @task.id %>. <del><%= @task.name %>: <%= @task.description %></del>
+
+
+  <%= link_to "☑️", complete_task_path(@task,
+  task: { complete: false, completion_date: nil}),
+  method: :patch %>
+  </p>
+<% else  %>
+  <p>
+    <%= @task.id %>. <%= @task.name %>: <%= @task.description %>
+  <%= link_to "🔘", complete_task_path(@task,
+  task: {complete: true, completion_date: Time.now}), method: :patch %>
 </p>
+<% end %>
+
+
+
+
+
+
+
 
 <%= render partial: "completed_on" %>
 
