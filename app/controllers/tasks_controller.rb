@@ -39,7 +39,7 @@ class TasksController < ApplicationController
     task = Task.find(params[:id])
 
     if task.update(task_params)
-      redirect_to task_path(task.id)
+      redirect_to complete_task_path(task.id)
     end
   end
 
