@@ -1,14 +1,15 @@
-<h1 class: "page_title">Tasks#index</h1>
+<h1class: "page_title">Task List</h1>
 
-<h2>Task List</h2>
+<ul class: "task_list">
   <% title = String.new %>
 
-<ol>
   <% @tasks.each do |task| %>
 
     <% if title != task.title %>
       <% title = task.title %>
-      <%= title.upcase %>
+      <p class: "title" >
+        <%= title.upcase %>
+      </p>
     <% end %>
 
 
@@ -30,7 +31,7 @@
       method: :delete%>
     </li>
   <% end %>
-</ol>
+</ul>
 
 
 <%= link_to "Add Task", new_task_path, class: "button" %>
