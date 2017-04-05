@@ -55,7 +55,7 @@ In this wave we will extend the interactivity with users, allowing them to edit 
       **-** the site should take the user back to the task's show page after the task is updated
 
 1. **Optional**
-  - DRY up your code by reusing the view code from the `new` functionality
+  **-** DRY up your code by reusing the view code from the `new` functionality
     - Hint: Rendering _partials_ in Rails
 
 
